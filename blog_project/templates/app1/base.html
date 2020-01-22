@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <title>{%block title%}{%endblock%}</title>
+</head>
+<style>
+    .content{
+    width:60%;
+    background:red;
+    float:left;
+    color:white;
+    }
+    .sidebar{
+    width:40%;
+    background:green;
+    float:right;
+    color:white;
+    }
+    h1{
+    border-bottom:1px solid grey;
+    text-align:center;
+    }
+    #publish{
+    color:yellow;
+    font-size:15px;
+    font-style:italic;
+    }
+</style>
+<body>
+
+<div class="content">
+{% block content%}
+
+{%endblock%}
+    </div>
+<div class="sidebar">
+    <h2>POSTS</h2>
+</div>
+</body>
+</html>
